@@ -119,7 +119,10 @@ This command generates static files in the `public` folder.
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under a restrictive copyright. All rights are reserved.
+
+The source code in this repository is provided for personal reference only. It is not permitted to copy, modify, or distribute any part of this code or its derivatives without prior written consent from the author.
+
 
 ---
 
