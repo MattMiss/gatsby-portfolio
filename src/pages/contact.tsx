@@ -7,8 +7,8 @@ const ContactPage: React.FC = () => (
     <div className="container mx-auto px-4 py-16">
       {/* Header */}
       <div className="text-center">
-        <h1 className="text-4xl font-bold text-gray-800">Get in Touch</h1>
-        <p className="text-lg text-gray-600 mt-4">
+        <h1 className="text-4xl font-bold text-gray-300">Get in Touch</h1>
+        <p className="text-lg text-gray-400 mt-4">
           Feel free to reach out via email or connect with me on social media.
         </p>
       </div>
@@ -17,7 +17,7 @@ const ContactPage: React.FC = () => (
       <div className="flex flex-col items-center mt-12">
         {/* Email */}
         <div className="text-center mb-8">
-          <h2 className="text-2xl font-semibold text-gray-700">Email</h2>
+          <h2 className="text-2xl font-semibold text-gray-300">Email</h2>
           <a
             href="mailto:youremail@example.com"
             className="text-blue-600 hover:underline text-lg"

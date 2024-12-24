@@ -3,32 +3,32 @@ import React from 'react';
 import { Link } from 'gatsby';
 
 const Navbar: React.FC = () => (
-  <nav className="bg-gray-800">
-    <div className="container mx-auto px-4">
+  <nav>
+    <div className="container max-w-screen-lg mx-auto px-4">
       <ul className="flex items-center justify-between h-16">
         <li>
-          <Link to="/" className="text-white text-2xl font-semibold">
+          <Link to="/" className="text-gray-300 text-2xl font-semibold">
             Matt Miss
           </Link>
         </li>
         <div className="flex space-x-4">
           <li>
-            <Link to="/" className="text-white hover:text-gray-400">
+            <Link to="/" className="text-gray-300 hover:text-gray-400">
               Home
             </Link>
           </li>
           <li>
-            <Link to="/about/" className="text-white hover:text-gray-400">
+            <Link to="/about/" className="text-gray-300 hover:text-gray-400">
               About
             </Link>
           </li>
           <li>
-            <Link to="/projects/" className="text-white hover:text-gray-400">
+            <Link to="/projects/" className="text-gray-300 hover:text-gray-400">
               Projects
             </Link>
           </li>
           <li>
-            <Link to="/contact/" className="text-white hover:text-gray-400">
+            <Link to="/contact/" className="text-gray-300 hover:text-gray-400">
               Contact
             </Link>
           </li>

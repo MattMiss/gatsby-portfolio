@@ -25,7 +25,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   };
 
   return (
-    <div className="border rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 bg-white overflow-hidden">
+    <div className="border border-zinc-800 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 bg-slate-700 overflow-hidden">
       {/* Thumbnail with Hover Effect */}
       <div className="relative group">
         {project.imageData ? (
@@ -50,20 +50,25 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
       </div>
 
       {/* Info */}
-      <div className="p-4">
-        <div className="flex items-center justify-between mb-2">
-          <h3 className="text-lg font-semibold text-gray-800">{project.title}</h3>
-          {/* Category Pill */}
+      <div className="p-4 h-full">
+        {/* Title and Description */}
+        <div>
+          <h3 className="text-lg font-semibold text-gray-300">{project.title}</h3>
+          <p className="text-sm text-gray-400 mt-2">{project.tagline}</p>
+        </div>
+
+        {/* Category Pill */}
+        <div className="mt-4">
           <span
-            className={`px-3 py-1 text-sm font-medium rounded-full ${getCategoryColor(
+            className={`px-3 py-1 text-xs font-medium rounded-full ${getCategoryColor(
               project.category
             )}`}
           >
             {project.category}
           </span>
         </div>
-        <p className="text-sm text-gray-600 mt-2">{project.tagline}</p>
       </div>
+
 
       {/* Modal */}
       {isModalOpen && (

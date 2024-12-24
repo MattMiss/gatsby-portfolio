@@ -2,8 +2,8 @@ import React from "react";
 import { FaGithub, FaLinkedin, FaYoutube, FaEnvelope } from "react-icons/fa";
 
 const Footer: React.FC = () => (
-  <footer className="bg-gray-800 text-white py-4">
-    <div className="container mx-auto flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
+  <footer className="text-gray-300 px-4 py-2">
+    <div className="container max-w-screen-lg mx-auto flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
       {/* Branding */}
       <p className="text-sm">
         © {new Date().getFullYear()} Matthew Miss. All rights reserved.

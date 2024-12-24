@@ -7,7 +7,7 @@ const IndexPage: React.FC = () => (
     <div className="container mx-auto px-4 py-16 flex flex-col md:flex-row items-center space-y-8 md:space-y-0 md:space-x-12">
       {/* Image */}
       <StaticImage 
-          src="../images/matt-portrait-white-bg.jpg" 
+          src="../images/matt-portrait.png" 
           alt="A portrait of Matt" 
           placeholder="blurred"
           width={400}
@@ -15,10 +15,10 @@ const IndexPage: React.FC = () => (
           />
       {/* Intro Section */}
       <div className="text-center md:text-left">
-        <h1 className="text-4xl font-bold text-gray-800">
+        <h1 className="text-4xl font-bold text-gray-300">
           Hi, I'm Matt!
         </h1>
-        <p className="text-lg text-gray-600 mt-4">
+        <p className="text-lg text-gray-400 mt-4">
           I’m a software developer specializing in React Native and web
           development. I focus on building user-friendly and accessible
           applications that solve real-world problems.
@@ -41,7 +41,7 @@ const IndexPage: React.FC = () => (
         </div>
 
         {/* Link to About Me */}
-        <p className="mt-4 text-gray-600">
+        <p className="mt-4 text-gray-400">
           Want to know more about me?{" "}
           <a href="/about" className="text-blue-500 hover:underline">
             Learn More →

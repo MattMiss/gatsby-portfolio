@@ -7,12 +7,12 @@ interface LayoutProps {
 }
 
 const Layout: React.FC<LayoutProps> = ({ children }) => (
-  <div className="flex flex-col min-h-screen">
+  <div className="bg-zinc-900 flex flex-col min-h-screen">
     {/* Navbar */}
     <Navbar />
     
     {/* Main Content */}
-    <main className="flex-grow container mx-auto px-4 py-8">{children}</main>
+    <main className="flex-grow container mx-auto max-w-screen-lg px-4 py-8">{children}</main>
     
     {/* Footer */}
     <Footer />
