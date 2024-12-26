@@ -17,11 +17,11 @@ const Navbar: React.FC = () => (
               Home
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link to="/about/" className="text-gray-300 hover:text-gray-400">
               About
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link to="/projects/" className="text-gray-300 hover:text-gray-400">
               Projects
