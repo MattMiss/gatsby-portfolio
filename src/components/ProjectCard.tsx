@@ -82,14 +82,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           }}
         >
           <div className="bg-white rounded-lg shadow-lg w-11/12 max-w-4xl p-6 relative overflow-y-auto">
-            <button
-              aria-label="Close"
-              className="absolute top-4 right-4 text-gray-600 hover:text-gray-900 focus:outline-none"
-              onClick={() => setModalOpen(false)}
-            >
-              ✖
-            </button>
-            <ProjectModal project={project} />
+            <ProjectModal project={project} onClose={() => setModalOpen(false)} />
           </div>
         </div>
       )}

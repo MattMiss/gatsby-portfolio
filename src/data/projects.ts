@@ -17,7 +17,14 @@ export const projects: Project[] = [
     ],
     "technologies": ["React Native", "Typescript", "Expo-Go", "NativewindCSS", "Expo FileSystem"],
     "githubRepo": "https://github.com/MattMiss/Chorchestra",
-    "liveDemo": null
+    "liveDemo": null,
+    "imageGrid": [
+      "chorechestra-features-1.jpg",
+      "chorechestra-features-2.jpg",
+      "chorechestra-features-3.jpg",
+      "chorechestra-features-4.jpg",
+      "chorechestra-features-5.jpg"
+    ]
   },
   {
     "title": "Green Coffee Beauty",
@@ -35,7 +42,8 @@ export const projects: Project[] = [
     ],
     "technologies": ["React Native", "Typescript", "Expo-Go", "NativewindCSS", "MongoDB"],
     "githubRepo": "https://github.com/BigGeF/GreenCafeSalonApp",
-    "liveDemo": null
+    "liveDemo": null,
+    "imageGrid": []
   },
   {
     "title": "Open Energy Dashboard",
@@ -51,7 +59,8 @@ export const projects: Project[] = [
     ],
     "technologies": ["React", "Typescript"],
     "githubRepo": "https://github.com/MattMiss/OED",
-    "liveDemo": null
+    "liveDemo": null,
+    "imageGrid": []
   },
   {
     "title": "Application Tracking Tool",
@@ -69,7 +78,8 @@ export const projects: Project[] = [
     ],
     "technologies": ["PHP", "SQL", "Bootstrap"],
     "githubRepo": "https://github.com/MattMiss/DragonflySprint2",
-    "liveDemo": null
+    "liveDemo": null,
+    "imageGrid": []
   },
   {
     "title": "Book Library",
@@ -87,6 +97,7 @@ export const projects: Project[] = [
     ],
     "technologies": ["Fat-Free PHP", "Bootstrap"],
     "githubRepo": "https://github.com/BigGeF/public_library_TeamEZ",
-    "liveDemo": null
+    "liveDemo": null,
+    "imageGrid": []
   }
 ];

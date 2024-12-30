@@ -10,8 +10,10 @@ export interface Project {
   technologies: string[];
   githubRepo: string;
   liveDemo?: string | null;
+  imageGrid?: string[];
 }
 
 export interface EnhancedProject extends Project {
-  imageData?: IGatsbyImageData; 
+  imageData?: IGatsbyImageData;
+  imageGridData?: (IGatsbyImageData | null)[]; // Allow null values
 }

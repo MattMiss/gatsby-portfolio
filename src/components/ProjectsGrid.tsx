@@ -44,10 +44,22 @@ const ProjectsGrid: React.FC = () => {
     const imageNode = data.allFile.nodes.find(
       (node) => node.relativePath === project.imagePath
     );
-
+  
+    const imageGridData = project.imageGrid
+      ? project.imageGrid
+          .map((imagePath) => {
+            const gridNode = data.allFile.nodes.find(
+              (node) => node.relativePath === imagePath
+            );
+            return gridNode?.childImageSharp.gatsbyImageData || null;
+          })
+          .filter((data): data is IGatsbyImageData => data !== null) // Ensure only valid IGatsbyImageData
+      : [];
+  
     return {
       ...project,
-      imageData: imageNode?.childImageSharp.gatsbyImageData, // Add the image data dynamically
+      imageData: imageNode?.childImageSharp.gatsbyImageData || undefined,
+      imageGridData,
     };
   });
 
