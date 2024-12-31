@@ -29,7 +29,7 @@ const Footer: React.FC = () => (
           <FaGithub size={24} />
         </a>
         <a
-          href="https://linkedin.com/in/metthew-miss"
+          href="https://linkedin.com/in/matthew-miss"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="LinkedIn"
