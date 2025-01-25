@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react';
 import Navbar from './Navbar';
 import Footer from './Footer';
-import HomeSection from './HomeSection';
+import AboutSection from './AboutSection';
 import ProjectsSection from './ProjectsSection';
 import ContactSection from './ContactSection';
 
@@ -19,7 +19,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => (
         {/* <main className="flex-grow container mx-auto max-w-screen-lg px-4 py-8">{children}</main> */}
         <main className="flex-grow">
             <section id="home" className="py-16">
-                <HomeSection />
+                <AboutSection />
             </section>
             <section id="projects" className="py-16">
                 <ProjectsSection />

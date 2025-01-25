@@ -13,19 +13,16 @@ const config: GatsbyConfig = {
         "gatsby-plugin-sharp", // Image processing
         "gatsby-transformer-sharp", // Creates image data for GraphQL
         {
-            resolve: "gatsby-source-filesystem",
+            resolve: `gatsby-plugin-webfonts`,
             options: {
-              name: "images",
-              path: path.resolve("./src/images/"),
-              ignore: [`**/.*`, `**/.cache/**`, `**/node_modules/**`], // Exclude unnecessary files
-            },
-        },
-        {
-            resolve: "gatsby-source-filesystem",
-            options: {
-              name: "pages",
-              path: path.resolve("./src/pages/"),
-              ignore: [`**/.*`, `**/.cache/**`, `**/node_modules/**`], // Exclude unnecessary files
+                fonts: {
+                    google: [
+                    {
+                        family: "Quicksand",
+                        variants: ["300", "400", "500", "700"],
+                    },
+                    ],
+                },
             },
         },
     ],

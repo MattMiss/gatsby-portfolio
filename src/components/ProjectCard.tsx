@@ -29,12 +29,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
 
                     {/* Made With */}
                     <div className="mb-4">
-                        <span className="text-gray-300 font-semibold">Made With: </span>
+                        <span className="text-gray-300 font-medium">Made With: </span>
                         <span className="text-blue-400">{project.technologies.join(", ")}</span>
                     </div>
 
                     {/* Features */}
-                    {/* <p className="text-md font-semibold text-gray-300">Features:</p>
+                    {/* <p className="text-md font-medium text-gray-300">Features:</p>
                     <ul className="list-disc list-inside text-sm text-gray-400 mb-4">
                         {project.features.map((feature, index) => (
                             <li key={index}>{feature}</li>
@@ -44,10 +44,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                     {/* Overview */}
                     <p className="text-md text-gray-400 mb-4">{project.overview}</p>
 
-                    <p className="text-md font-semibold text-gray-300">Key Challenges:</p>
+                    <p className="text-md font-medium text-gray-300">Key Challenges:</p>
                     <ul className="list-disc list-inside text-sm text-gray-400 mb-4">
                         {project.challenges.map((item, index) => (
-                            <li key={index}><span className="font-semibold text-blue-400">{item.challenge}: </span>{item.solution}</li>
+                            <li key={index}><span className="font-medium text-blue-400">{item.challenge}: </span>{item.solution}</li>
                         ))}
                     </ul>
                 </div>

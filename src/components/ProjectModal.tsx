@@ -32,7 +32,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) => {
 
         {/* Features */}
         <div className="mb-4">
-          <h3 className="font-semibold text-gray-800">Key Features</h3>
+          <h3 className="font-medium text-gray-800">Key Features</h3>
           <ul className="list-disc pl-5 text-gray-600">
             {project.features.map((feature, index) => (
               <li key={index}>{feature}</li>
@@ -42,14 +42,14 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) => {
 
         {/* Technologies */}
         <div className="mb-4">
-          <h3 className="font-semibold text-gray-800">Technologies Used</h3>
+          <h3 className="font-medium text-gray-800">Technologies Used</h3>
           <p className="text-gray-600">{project.technologies.join(", ")}</p>
         </div>
 
         {/* Image Grid */}
         {imageGridData.length > 0 && (
           <div className="mb-4">
-            <h3 className="font-semibold text-gray-800">Gallery</h3>
+            <h3 className="font-medium text-gray-800">Gallery</h3>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 mt-4">
               {imageGridData.map((imageData, index) =>
                 imageData ? (
